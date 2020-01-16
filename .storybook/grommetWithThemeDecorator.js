@@ -1,9 +1,9 @@
 import React from 'react'
 import { ThemeProvider } from 'styled-components'
-import { SparkGeoBaseTheme, Grommet } from '../src/lib'
+import { SparkgeoBaseTheme, Grommet } from '../src/lib'
 
 const GrommetWithThemeDecorator = storyFn => (
-  <ThemeProvider theme={SparkGeoBaseTheme}>
+  <ThemeProvider theme={SparkgeoBaseTheme}>
     <Grommet>{storyFn()}</Grommet>
   </ThemeProvider>
 )
