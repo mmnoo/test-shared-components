@@ -1,68 +1,33 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Sparkgeo Shared Components
+This documentation is a work in progress. 
+## Consuming Components (WIP)
+Keep a close eye on this repo's peer dependencies. When composing a component in another project, you will need to some or all of the peer dependencies listed here. 
+### Likely Steps:
+1. Import the desired component `yarn add xxxxxxx` 
+1. Install the peer dependencies listed here in your project repo
+1. If the component depends on `Grommet`, configure Grommet in your app. (Likely Wrap the contents of your App component like so: ` <Grommet> ... </Grommet>`)
+1. 
 
-## Available Scripts
+## Developing Components
+### Current Steps: (subject to change)
+1. `yarn install`
+1. `yarn test` to run tests
+1. For visual inspection, run `yarn start`, modify the files inside the `module` folder
+1. Because this is a shared components library which has potential to create significant technical debt, all components need unit tests, so please write tests. If unsure about testing, ping Melissa for help.
+1. Please commit changes to separate branch and create PR. Because of the technical debt potential of this library, this repo has mandatory code reviews by the following developers [x, y, z]}
+1. We still need to figure out a good process for Al to review components in terms of UX... does it make sense for him to be a mandatory code reviewer and we use something magical to deploy the code inside to Module folder for visual inspection?
+1. After your review, let the #xxxxxxxx channel on slack know about the availability of your component if it is new or significantly refactored
 
-In the project directory, you can run:
+## To Do:
 
-### `yarn start`
+- [ ] Figure out how to install components one by one istead of installing the whole component library
+- [ ] Configure with React Testing Library
+- [ ] Figure out simple development workflow for local visual testing
+- [ ] Configure to play nice with Grommet
+- [ ] Figure out how to elegantly deal with theming
+- [ ] Refine Readme
+- [ ] figure out where components live and versioning long-term (Bit.dev for now)
+- [ ] Add basic instructions for working with Bit
+- [ ] Configure linter
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Initial library stucture inspired by ['Create Library of React Component'](https://dev.to/arpitjain_in/create-library-of-react-component-1fa8 ) article
