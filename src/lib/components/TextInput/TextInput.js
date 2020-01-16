@@ -2,7 +2,11 @@ import { PropTypes } from 'prop-types'
 import { TextInput as GrommetTextInput } from 'grommet'
 import React from 'react'
 import { InputErrorText } from '../sharedStyledComponents'
-
+/**
+ * A Spk wrapping of Grommet's TextInput.
+ * The placeholder property will have no effect and will instead be converted to helper text
+ * All properties from [Grommet TextInput](https://v2.grommet.io/textinput) are available.
+ */
 const TextInput = props => {
   const { placeholder, helperText, name, label, error, onChange } = props
   // eslint-disable-next-line react/destructuring-assignment
