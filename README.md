@@ -17,9 +17,9 @@ Note: keep a close eye on this repo's peer dependencies. When composing a compon
     *  A demo `create-react-app` app. To use it, run `yarn start`, and modify the files inside the `Demo` folder as you work.
     * Storybook. To use it run `yarn storybook`. This will compile and visualize all compoents with a `<component name>.stories.js` file name type. Please include these files within the component folder.
 1. Because this is a shared components library, which has potential to create significant technical debt, all components need unit tests, so please write tests. If unsure about testing, ping Melissa for help. You are encouraged to play with Storybook. Its use over the CRA demo is up for discussion (like everything else in this repo actually!)
-1. Please commit changes to separate branch and create PR (non-temporary repo TBD). Because of the technical debt potential of this library, this repo has mandatory code reviews by the following developers [x, y, z]}
-1. We still need to figure out a good process for Al to review components in terms of UX... does it make sense for him to be a mandatory code reviewer and we use something magical to deploy the code inside to Module folder for visual inspection?
-1. After your review, let the #xxxxxxxx channel on slack know about the availability of your component 
+1. Please commit changes to separate branch and create a PR (non-temporary repo TBD). Because of the technical debt potential of this library, this repo has mandatory code reviews by the following developers [x, y, z]}
+1. Currently, each PR against develop will include link to a Netlify deployment of the code in the PR. UX folks could review this as part of the PR process. A current deployment of the `develop` branch can also be viewed [here](https://compassionate-jepsen-7e2ea6.netlify.com/).
+1. After your review, let the #xxxxxxxx channel on slack know about the availability of your component (?)
 
 ## To Do:
 
