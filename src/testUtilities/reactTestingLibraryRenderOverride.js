@@ -5,12 +5,12 @@ import { ThemeProvider } from 'styled-components'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import theme from '../lib/theme'
+import { SparkgeoBaseTheme } from '../lib'
 
 const AllTheProviders = ({ children }) => {
   return (
-    <ThemeProvider theme={theme}>
-      <Grommet theme={theme}>{children}</Grommet>
+    <ThemeProvider theme={SparkgeoBaseTheme}>
+      <Grommet theme={SparkgeoBaseTheme}>{children}</Grommet>
     </ThemeProvider>
   )
 }
