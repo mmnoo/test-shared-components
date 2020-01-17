@@ -28,13 +28,13 @@ Note: keep a close eye on this repo's peer dependencies. When composing a compon
 - [x] Configure to play nice with Grommet
 - [ ] Figure out how to elegantly deal with theming
 - [ ] Refine Readme
-- [ ] figure out where components live and versioning long-term (npm for now)
+- [x] Publish to npm for now?
 - [ ] ~~Add basic instructions for working with Bit~~
 - [x] Configure linter
-- [ ] make each component installable one-by-one for more refined version control
+- [ ] Make each component installable one-by-one for more refined version control. This is in anticipation of a project wanting to install two components, each with a different library version. Contenders: Bit (likely candidate), Lerna, RushJS, git subtrees (?), Nx. In the interim, there isnt any likely harm in publishing components one-by-one to Bit.dev if a project needs to consume different versions of components. 
 - [x] install storybook
-- [ ] research Storybook documentation add on
-- [ ] explore more advanced Storybook features
-- [ ] figure out how to automatically deploy storybook on push
+- [ ] research Storybook documentation add ons (if buy-in)
+- [ ] explore more advanced Storybook features (if buy-in)
+- [x] figure out how to automatically deploy storybook on push (using Netlify)
 
 Initial library stucture inspired by ['Create Library of React Component'](https://dev.to/arpitjain_in/create-library-of-react-component-1fa8 ) article
