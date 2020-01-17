@@ -4,7 +4,7 @@ import { SparkgeoBaseTheme, Grommet } from '../src/lib'
 
 const GrommetWithThemeDecorator = storyFn => (
   <ThemeProvider theme={SparkgeoBaseTheme}>
-    <Grommet>{storyFn()}</Grommet>
+    <Grommet theme={SparkgeoBaseTheme}>{storyFn()}</Grommet>
   </ThemeProvider>
 )
 
