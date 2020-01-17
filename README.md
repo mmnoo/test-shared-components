@@ -36,5 +36,6 @@ Note: keep a close eye on this repo's peer dependencies. When composing a compon
 - [ ] research Storybook documentation add ons (if buy-in)
 - [ ] explore more advanced Storybook features (if buy-in)
 - [x] figure out how to automatically deploy storybook on push (using Netlify)
+- [ ] configure addonn for documentaiton (pulls from props and docgen comments)
 
 Initial library stucture inspired by ['Create Library of React Component'](https://dev.to/arpitjain_in/create-library-of-react-component-1fa8 ) article
