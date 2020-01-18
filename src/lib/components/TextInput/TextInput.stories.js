@@ -41,6 +41,16 @@ export const withHelperText = () => (
   />
 )
 
+export const withHelperTextAndError = () => (
+  <TextInput
+    label="Input Label"
+    name="name"
+    helperText="helper text"
+    error="Oh no!"
+    onChange={action('on-input-change')}
+  />
+)
+
 export const placeholderConvertsToHelperText = () => (
   <TextInput
     label="Input Label"
@@ -58,3 +68,43 @@ export const simplePassword = () => (
     onChange={action('on-input-change')}
   />
 )
+// This is a workaround to add per-story comments to the Docs tab.
+// Something more elegant may be coming down the pipe soon: https://github.com/storybookjs/storybook/issues/8527
+simplePassword.story = {
+  parameters: {
+    docs: {
+      storyDescription: `
+        If we want to create a hide/show password, its probably best to break 
+        that out into its own component
+      `,
+    },
+  },
+}
+
+export const usingGrommetPropsNotExplicitlyListedHere = () => {
+  const [value, setValue] = React.useState('')
+
+  const onChange = event => setValue(event.target.value)
+
+  const onSelect = event => setValue(event.suggestion)
+
+  const suggestions = ['suggestion 1', 'suggestion 2', 'etc.']
+
+  return (
+    <TextInput
+      value={value}
+      onChange={onChange}
+      onSelect={onSelect}
+      suggestions={suggestions}
+      size="xsmall"
+    />
+  )
+}
+
+usingGrommetPropsNotExplicitlyListedHere.story = {
+  parameters: {
+    docs: {
+      storyDescription: `Uses 'suggestions', 'onSelect', and 'size' parameters from Grommet TextInput`,
+    },
+  },
+}

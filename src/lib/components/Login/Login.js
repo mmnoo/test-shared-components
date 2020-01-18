@@ -2,6 +2,10 @@ import React, { useState } from 'react'
 import { Form, FormField, Button } from 'grommet'
 import PropTypes from 'prop-types'
 
+/**
+ * A login component with basic input validation to check
+ * that field values are present.
+ */
 function Login({ onSubmit }) {
   const [usernameError, setUsernameError] = useState()
   const [passwordError, setPasswordError] = useState()
